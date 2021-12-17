@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes fanChala {
+
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+
+
+        @keyframes fan{
+            0%{
+                transform: rotate(5deg);
+            }
+            90%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        @keyframes meriAnimation {
+
+            0% {
+                background: green;
+
+            }
+            10%{
+                background: blueviolet;
+            }
+            30%{
+                background: cadetblue;
+            }
+            45%{
+                background: deeppink;
+            }
+
+            50% {
+                background:blue;
+            }
+
+            70% {
+                background: orange;
+            }
+            80%{
+                background: dimgray;
+            }
+
+            100% {
+                background: red;
+            }
+
+        }
+
+        #truck {
+            width: 200px;
+            position: absolute;
+            transform: rotate(30deg) scale(0.5) skew(20deg);
+            /* transform: skew(20deg); */
+            /* top:0; */
+            /* right: 0; */
+            /* transition: right 3s ease-in-out 0s, top 3s linear 0s; */
+        }
+
+        #truck:hover {
+            /* right: 500px;
+            top:400px; */
+        }
+
+        #tank {
+            width: 100px;
+            height: 100vw;width: 100vw;
+            background: green;
+            animation: meriAnimation 5s linear 0s;
+        }
+
+        #fan{
+            height: 500px;width: 70px;
+            padding-bottom: 20px;
+            background-color: aqua;
+            animation: fanChala 1s linear 0s ;
+            animation-iteration-count: infinite;
+            position: absolute;
+            justify-content: center;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            transform: skew(4);
+        }
+
+        #fan2{
+            height: 400px;width: 200px;
+            padding-bottom: 20px;
+            background-color: blue;
+            animation: fan 0.001s linear 0s ;
+            animation-iteration-count: infinite;
+            position: absolute;
+            justify-content: center;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div  id="fan"></div>
+    <div class="fan2"></div>
+
+    <!-- <img id="fan" src="fan-9.png" alt=""> -->
+
+
+    <div id="tank"></div>
+    <!-- <img id='truck' src="car1.png" alt=""> -->
+
+</body>
+
+</html>
